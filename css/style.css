@@ -546,7 +546,7 @@ img {
  } */
 
 /* центрування */
-
+/* 
  .parent {
    position: relative;
    background-color: red;
@@ -562,4 +562,173 @@ img {
    left: 50%;
    background-color: yellow;
   transform: translate(-50%, -50%);
- } 
+ }  */
+
+
+
+ /* * {
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: sans-serif;
+   line-height: 1.5;
+   color: #212121;
+ }
+
+ input,
+ textarea,
+ button {
+   font-family: inherit;
+   line-height: inherit;
+ }
+
+ textarea {
+   resize: none;
+ }
+
+ .form {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   padding: 8px;
+   border: 1px solid #212121;
+   max-width: 300px;
+ }
+
+ .form-button {
+   align-self: flex-start;
+ }
+
+ .form-input {
+   padding: 4px;
+   color: #212121;
+   border: 1px solid #212121;
+   border-radius: 4px;
+ }
+
+ .form-input::placeholder {
+   color: #616161;
+ }
+
+ .form-label {
+   display: flex;
+   flex-direction: column;
+   transition: color 150ms ease-in-out;
+ }
+
+ .form-label:focus-within {
+   color: #009688;
+ } */
+
+ /* пример хороший  */
+
+ * {
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: sans-serif;
+   line-height: 1.5;
+ }
+
+ .form {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   max-width: 300px;
+ }
+
+ .form-group {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+   padding: 0;
+   margin: 0;
+   border: none;
+ }
+
+ .group-title {
+   width: 100%;
+   font-weight: 700;
+ }
+
+ .form-label {
+   display: flex;
+   flex-direction: column;
+   cursor: pointer;
+ }
+
+ input {
+   padding: 4px;
+ }
+
+ .form-field {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+ }
+
+
+ /* модальное окно */
+
+ * {
+   box-sizing: border-box;
+ }
+
+ body {
+   margin: 0;
+   min-height: 100vh;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color: black;
+   background-color: white;
+ }
+
+ p {
+   margin: 0;
+ }
+
+ .container {
+   max-width: 1200px;
+   min-width: 320px;
+   margin: 0 auto;
+   padding: 0 16px;
+ }
+
+ .page-title {
+   margin-top: 0;
+ }
+
+ .modal-overlay {
+   background-color: rgba(0, 0, 0, 0.5);
+
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 999;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   opacity: 0;
+   pointer-events: none;
+   transition: opacity 250ms ease-in-out;
+ }
+
+ .modal-overlay.is-open {
+   opacity: 1;
+   pointer-events: auto;
+ }
+
+ .modal {
+   background-color: #fff;
+   border-radius: 4px;
+   padding: 16px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   max-width: 480px;
+   max-height: 80%;
+   overflow-y: auto;
+ }
